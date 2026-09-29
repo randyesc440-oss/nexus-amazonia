@@ -166,12 +166,16 @@ footer{background:#091712;color:#aabbb2;text-align:center;padding:25px 20px;font
       <h3 style="font-size:25px;margin-bottom:15px">NEXUS AMAZONÍA</h3>
       <p>Iquitos · Loreto · Perú</p>
       <p style="margin-top:10px">🌿 Connecting the Amazon to the World.</p>
-      <p style="margin-top:18px">📧 contacto@nexusamazonia.com</p>
-      <p>📱 WhatsApp: +51 XXX XXX XXX</p>
+      <p style="margin-top:18px">📧 <a href="mailto:randyesc440@gmail.com" style="color:inherit;text-decoration:none">randyesc440@gmail.com</a></p>
+      <p>📱 <a href="https://wa.me/51900680216" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">WhatsApp: +51 900 680 216</a></p>
     </div>
-    <form onsubmit="event.preventDefault(); alert('Gracias. En la versión publicada conectaremos este formulario con tu correo o WhatsApp.');">
-      <input type="text" placeholder="Nombre / Name" required>
-      <input type="email" placeholder="Correo / Email" required>
+    <form onsubmit="event.preventDefault(); const nombre=this.querySelector('[name=nombre]').value; const correo=this.querySelector('[name=correo]').value; const mensaje=this.querySelector('[name=mensaje]').value; const texto=encodeURIComponent('Hola, NEXUS AMAZONÍA.
+
+Nombre: '+nombre+'
+Correo: '+correo+'
+Mensaje: '+mensaje); window.open('https://wa.me/51900680216?text='+texto,'_blank');">
+      <input type="text" name="nombre" placeholder="Nombre / Name" required>
+      <input type="email" name="correo" placeholder="Correo / Email" required>
       <textarea placeholder="¿Cómo podemos ayudarte? / How can we help?"></textarea>
       <button class="btn btn-primary" type="submit">Enviar mensaje / Send message</button>
     </form>
