@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS AMAZONÍA | Conectando la Amazonía con el mundo</title>
+<meta name="description" content="Nexus Amazonía conecta turismo, productos amazónicos, productores y oportunidades comerciales desde Tamshiyacu e Iquitos hacia el mundo.">
+<style>
+:root{
+  --green:#0b4f3a; --green2:#146b4f; --gold:#d5a63a; --cream:#f7f3e8;
+  --dark:#10251e; --white:#fff; --muted:#64736c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+header{position:fixed;top:0;width:100%;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #e6ebe8}
+nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 22px}
+.logo{font-weight:800;letter-spacing:1px;color:var(--green);font-size:20px}
+.logo span{display:block;font-size:10px;letter-spacing:2px;color:var(--gold);margin-top:1px}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a{color:var(--dark);text-decoration:none;font-size:14px;font-weight:600}
+nav a:hover{color:var(--green2)}
+.lang{border:1px solid #d9e0dc;background:white;border-radius:20px;padding:7px 12px;cursor:pointer;font-weight:700}
+.hero{min-height:720px;padding:150px 22px 90px;background:
+linear-gradient(90deg,rgba(5,34,24,.88),rgba(5,34,24,.45),rgba(5,34,24,.2)),
+linear-gradient(135deg,#0b4f3a,#174f3d);color:white;display:flex;align-items:center}
+.hero-inner{max-width:1180px;margin:auto;width:100%}
+.badge{display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:30px;padding:8px 14px;font-size:13px;margin-bottom:22px}
+h1{font-size:clamp(42px,7vw,78px);line-height:1.02;max-width:850px;margin-bottom:20px}
+.hero p{font-size:20px;max-width:700px;color:#edf5f0;margin-bottom:30px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:28px;text-decoration:none;font-weight:800}
+.btn-primary{background:var(--gold);color:#18251f}
+.btn-light{border:1px solid rgba(255,255,255,.6);color:white}
+section{padding:90px 22px}
+.container{max-width:1180px;margin:auto}
+.eyebrow{color:var(--green2);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-bottom:10px}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin-bottom:16px}
+.lead{color:var(--muted);max-width:760px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.card{padding:28px;border-radius:20px;background:var(--cream);border:1px solid #e8e4d8}
+.card .icon{font-size:35px;margin-bottom:18px}
+.card h3{font-size:22px;margin-bottom:9px;color:var(--green)}
+.card p{color:#596860}
+.card a{display:inline-block;margin-top:18px;color:var(--green);font-weight:800;text-decoration:none}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.panel{background:var(--green);color:white;border-radius:28px;padding:44px}
+.panel h3{font-size:30px;margin-bottom:14px}
+.panel p{color:#e3eee9}
+.pillars{display:grid;gap:14px;margin-top:25px}
+.pillar{padding:15px 18px;border-radius:12px;background:rgba(255,255,255,.09)}
+.timeline{margin-top:40px;border-left:3px solid var(--gold);padding-left:28px;display:grid;gap:28px}
+.step h3{color:var(--green);margin-bottom:4px}
+.contact{background:var(--dark);color:white}
+.contact .lead{color:#ccd9d3}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:35px}
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid #d8e0dc;font:inherit}
+textarea{min-height:130px;resize:vertical}
+footer{background:#091712;color:#aabbb2;text-align:center;padding:25px 20px;font-size:13px}
+@media(max-width:800px){
+ nav ul{display:none}.grid,.split,.contact-grid{grid-template-columns:1fr}
+ .hero{min-height:650px;padding-top:125px}.panel{padding:30px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+  <div class="logo">NEXUS AMAZONÍA<span>CONNECTING THE AMAZON TO THE WORLD</span></div>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#turismo">Turismo</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#agro">Nexus Agro</a></li>
+    <li><a href="#vision">Agroexportación</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="lang" onclick="toggleLang()">EN / ES</button>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="hero-inner">
+  <div class="badge">TAMSHIYACU · IQUITOS · LORETO · PERÚ</div>
+  <h1 id="heroTitle">Conectando la Amazonía con el mundo.</h1>
+  <p id="heroText">Turismo, productos amazónicos y oportunidades comerciales nacidas en el corazón de Loreto, con una visión de crecimiento hacia la agroindustria y la agroexportación.</p>
+  <div class="ctas">
+    <a class="btn btn-primary" href="#turismo">Descubrir la Amazonía</a>
+    <a class="btn btn-light" href="#contacto">Oportunidades comerciales</a>
+  </div>
+</div>
+</section>
+
+<section id="turismo">
+<div class="container">
+  <div class="eyebrow">Nexus Tourism</div>
+  <h2>Experiencias auténticas en la Amazonía peruana.</h2>
+  <p class="lead">Conectamos viajeros con experiencias amazónicas y facilitamos la comunicación intercultural mediante atención en español e inglés.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🛶</div><h3>Amazon Experiences</h3><p>Naturaleza, cultura, navegación y experiencias locales alrededor de Iquitos.</p><a href="#contacto">Plan your experience →</a></article>
+    <article class="card"><div class="icon">🗣️</div><h3>English · Spanish</h3><p>Interpretación y acompañamiento para viajeros internacionales desde una perspectiva local.</p><a href="#contacto">Let's connect →</a></article>
+    <article class="card"><div class="icon">🤝</div><h3>Tourism Partnerships</h3><p>Conexión con operadores y empresas locales para desarrollar oportunidades comerciales.</p><a href="#contacto">Business inquiry →</a></article>
+  </div>
+</div>
+</section>
+
+<section id="productos" style="background:#f7f8f6">
+<div class="container">
+  <div class="eyebrow">Nexus Commercial</div>
+  <h2>Productos de origen amazónico.</h2>
+  <p class="lead">Nuestra primera etapa empresarial parte de la comercialización y distribución de productos de origen amazónico, con especial interés en la piña de Tamshiyacu, humarí, cacao, castaña y otros productos con potencial de mercado.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🥚</div><h3>Huevos</h3><p>Comercialización y distribución con enfoque en clientes locales y negocios.</p></article>
+    <article class="card"><div class="icon">🍍</div><h3>Piña de Tamshiyacu</h3><p>Producto estratégico de nuestra visión agrocomercial, con potencial para desarrollar cadena productiva, valor agregado y futuros mercados.</p></article>
+    <article class="card"><div class="icon">🥭</div><h3>Humarí</h3><p>Fruto amazónico de identidad local que buscamos incorporar progresivamente a nuestra cartera de productos.</p></article>
+    <article class="card"><div class="icon">🍫</div><h3>Cacao</h3><p>Una línea con potencial de articulación con productores, transformación y desarrollo de productos con valor agregado.</p></article>
+    <article class="card"><div class="icon">🌰</div><h3>Castaña</h3><p>Producto amazónico con potencial comercial, sujeto a una estrategia responsable de abastecimiento, calidad y trazabilidad.</p></article>
+    <article class="card"><div class="icon">🌱</div><h3>Otros productos amazónicos</h3><p>Una cartera que crecerá progresivamente junto a productores y cadenas productivas de Loreto.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="agro">
+<div class="container split">
+  <div>
+    <div class="eyebrow">Nexus Agro</div>
+    <h2>De la comercialización a la articulación productiva.</h2>
+    <p class="lead">Nuestro objetivo es construir relaciones de largo plazo con productores de Tamshiyacu y Loreto, mejorar la conexión con los mercados y avanzar hacia productos con mayor valor agregado.</p>
+  </div>
+  <div class="panel">
+    <h3>La cadena comienza aquí.</h3>
+    <p>Identificar productos con potencial, desarrollar mercados, organizar proveedores y construir estándares de calidad.</p>
+    <div class="pillars">
+      <div class="pillar">👨‍🌾 Productores locales</div>
+      <div class="pillar">📦 Acopio y comercialización</div>
+      <div class="pillar">🏷️ Marca y valor agregado</div>
+      <div class="pillar">🌎 Acceso a mercados</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="vision" style="background:var(--cream)">
+<div class="container">
+  <div class="eyebrow">Nuestra visión</div>
+  <h2>De Tamshiyacu al mundo.</h2>
+  <p class="lead">La agroexportación es el horizonte de largo plazo. El camino empieza con ventas reales, clientes, proveedores, calidad, distribución y conocimiento del mercado, desarrollando progresivamente productos como la piña de Tamshiyacu, humarí, cacao y castaña.</p>
+  <div class="timeline">
+    <div class="step"><h3>01 · Comercializar</h3><p>Huevos, frutas y productos amazónicos.</p></div>
+    <div class="step"><h3>02 · Distribuir</h3><p>Construir una cartera de clientes y ampliar el mercado.</p></div>
+    <div class="step"><h3>03 · Articular</h3><p>Trabajar con productores y desarrollar cadenas productivas.</p></div>
+    <div class="step"><h3>04 · Agregar valor</h3><p>Selección, empaque, transformación y marca propia.</p></div>
+    <div class="step"><h3>05 · Exportar</h3><p>Conectar productos amazónicos con mercados internacionales.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="contacto" class="contact">
+<div class="container">
+  <div class="eyebrow" style="color:#d5a63a">Let's connect</div>
+  <h2>Construyamos oportunidades desde la Amazonía.</h2>
+  <p class="lead">¿Eres viajero, operador turístico, comprador, productor o potencial socio comercial? Conversemos.</p>
+  <div class="contact-grid">
+    <div>
+      <h3 style="font-size:25px;margin-bottom:15px">NEXUS AMAZONÍA</h3>
+      <p>Iquitos · Loreto · Perú</p>
+      <p style="margin-top:10px">🌿 Connecting the Amazon to the World.</p>
+      <p style="margin-top:18px">📧 contacto@nexusamazonia.com</p>
+      <p>📱 WhatsApp: +51 XXX XXX XXX</p>
+    </div>
+    <form onsubmit="event.preventDefault(); alert('Gracias. En la versión publicada conectaremos este formulario con tu correo o WhatsApp.');">
+      <input type="text" placeholder="Nombre / Name" required>
+      <input type="email" placeholder="Correo / Email" required>
+      <textarea placeholder="¿Cómo podemos ayudarte? / How can we help?"></textarea>
+      <button class="btn btn-primary" type="submit">Enviar mensaje / Send message</button>
+    </form>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 NEXUS AMAZONÍA · Iquitos, Loreto, Perú · Connecting the Amazon to the World.</footer>
+
+<script>
+let english=false;
+function toggleLang(){
+ english=!english;
+ document.documentElement.lang=english?'en':'es';
+ document.getElementById('heroTitle').textContent=english?'Connecting the Amazon to the world.':'Conectando la Amazonía con el mundo.';
+ document.getElementById('heroText').textContent=english
+ ?'Tourism, Amazonian products and business opportunities born in the heart of Loreto, with a long-term vision towards agribusiness and exports.'
+ :'Turismo, productos amazónicos y oportunidades comerciales nacidas en el corazón de Loreto, con una visión de crecimiento hacia la agroindustria y la agroexportación.';
+}
+</script>
+</body>
+</html>
